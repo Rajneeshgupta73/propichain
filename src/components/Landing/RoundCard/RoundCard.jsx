@@ -1,7 +1,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Button from "../shared/Button";
+import Button from "../../shared/Button";
 import { IconArrow } from "../../iocns/Icons";
 
 const RoundCard = () => {

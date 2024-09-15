@@ -17,6 +17,7 @@ export default {
         'gray': '#E8E8E8',
         'green': '#2B8872',
         'primary-hover': '#4EA28E',
+        'light-green': '#03DF84',
       },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'], 

@@ -1,10 +1,14 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Banner from '../components/Banner/Banner'
-import Round from '../components/RoundCard/RoundCard'
-import Advertisement from '../components/Advertisement/Advertisement'
-import Vision from '../components/Vision/Vision'
-import HowItWorks from '../components/HowItWorks/HowItWorks'
+import Header from '../components/Landing/Header/Header'
+import Banner from '../components/Landing/Banner/Banner'
+import Round from '../components/Landing/RoundCard/RoundCard'
+import Advertisement from '../components/Landing/Advertisement/Advertisement'
+import Vision from '../components/Landing/Vision/Vision'
+import HowItWorks from '../components/Landing/HowItWorks/HowItWorks'
+import Testimonial from '../components/Landing/Testimonial/Testimonial'
+import Tokenomics from '../components/Landing/Tokenomics/Tokenomics'
+import Roadmap from '../components/Landing/Roadmap/Roadmap'
+import Footer from '../components/Landing/Footer/Footer'
 
 const Home = () => {
   return (
@@ -18,6 +22,11 @@ const Home = () => {
         <Advertisement/>
         <Vision/>
         <HowItWorks/>
+        <Testimonial/>
+        <Advertisement/>
+        <Tokenomics/>
+        <Roadmap/>
+        <Footer/>
     </div>
   )
 }

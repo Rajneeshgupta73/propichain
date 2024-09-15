@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../shared/Button";
+import Button from "../../shared/Button";
 import Navigation from "./Navigation";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";

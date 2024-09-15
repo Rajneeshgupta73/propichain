@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Advertisement = () => {
 
   return (
-    <div className="flex items-center gap-16 bg-brand-black mt-52">
+    <div className="flex items-center gap-16 bg-brand-black my-40">
       <Marquee speed={50} gradient={false}>
 
           <div className="mx-4">

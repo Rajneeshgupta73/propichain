@@ -14,6 +14,7 @@
   --gray:#E8E8E8;
   --green:#2B8872;
   --primary-hover:#4EA28E;
+  --light-green:#03DF84;
 }
 
 @layer base{
@@ -53,7 +54,7 @@
     @apply text-[64px] font-normal font-display;
   }
   p{
-    @apply text-2md font-medium;
+    @apply text-2md font-medium text-light-black;
   }
 }
 .shadow1{
@@ -93,4 +94,16 @@ z-index: -1;
   background-repeat: no-repeat;
   background-size: contain;
 z-index: -1;
+}
+.howwItBg{
+  width:100%;
+  height:643px;
+  flex-shrink: 0;
+  background: url("../public/img/Ресурс 2_1_4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+z-index: -1;
+}
+.width-max70{
+  @apply max-w-[70%]
 }
