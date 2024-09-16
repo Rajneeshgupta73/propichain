@@ -1,109 +1,155 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --primary-color: #2B8872;
-  --light-gray:#E8E8E8;
-  --extra-light:#FEFEFE;
-  --dark-black:#27292D;
-  --light-black:#505258;
-  --brand-black:#33363F;
-  --gray:#E8E8E8;
-  --green:#2B8872;
-  --primary-hover:#4EA28E;
-  --light-green:#03DF84;
+:root {
+  --primary-color: #2b8872;
+  --light-gray: #e8e8e8;
+  --extra-light: #fefefe;
+  --dark-black: #27292d;
+  --light-black: #505258;
+  --brand-black: #33363f;
+  --gray: #e8e8e8;
+  --green: #2b8872;
+  --primary-hover: #4ea28e;
+  --light-green: #03df84;
 }
 
-@layer base{
+@layer base {
   @font-face {
-    font-family: 'Monument Extended';
-    src: url('./fonts/MonumentExtended-Regular.eot');
-    src: url('./fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/MonumentExtended-Regular.woff2') format('woff2'),
-        url('./fonts/MonumentExtended-Regular.woff') format('woff'),
-        url('./fonts/MonumentExtended-Regular.ttf') format('truetype');
+    font-family: "Monument Extended";
+    src: url("./fonts/MonumentExtended-Regular.eot");
+    src: url("./fonts/MonumentExtended-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("./fonts/MonumentExtended-Regular.woff2") format("woff2"),
+      url("./fonts/MonumentExtended-Regular.woff") format("woff"),
+      url("./fonts/MonumentExtended-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+  }
 
-@font-face {
-    font-family: 'Monument Extended';
-    src: url('./fonts/MonumentExtended-Ultrabold.eot');
-    src: url('./fonts/MonumentExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/MonumentExtended-Ultrabold.woff2') format('woff2'),
-        url('./fonts/MonumentExtended-Ultrabold.woff') format('woff'),
-        url('./fonts/MonumentExtended-Ultrabold.ttf') format('truetype');
+  @font-face {
+    font-family: "Monument Extended";
+    src: url("./fonts/MonumentExtended-Ultrabold.eot");
+    src: url("./fonts/MonumentExtended-Ultrabold.eot?#iefix")
+        format("embedded-opentype"),
+      url("./fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
+      url("./fonts/MonumentExtended-Ultrabold.woff") format("woff"),
+      url("./fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-}
+  }
 
-  body{
+  body {
     font-family: "DM Sans", sans-serif;
-    color: #33363F;
-    overflow-x: hidden
+    color: #33363f;
+    overflow-x: hidden;
   }
-  h3{
-    @apply text-3xl font-bold font-display tracking-[5.44px] leading-9;
+  body.menu-open {
+    @apply overflow-hidden;
   }
-  h2{
-    @apply text-[64px] font-normal font-display;
+  h3 {
+    @apply text-2xl 2xl:text-3xl font-bold font-display tracking-[3.4px] 2xl:tracking-[5.44px] leading-9;
   }
-  p{
-    @apply text-2md font-medium text-light-black;
+  h2 {
+    @apply text-5xl 2xl:text-[64px] font-normal font-display;
+  }
+  p {
+    @apply text-base 2xl:text-2md font-medium text-light-black;
   }
 }
-.shadow1{
+.shadow1 {
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.05);
 }
-.textGradient{
-  background: var(--Brand-Gradient, linear-gradient(135deg, #02634C 15.86%, #02DE83 62.42%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.textGradient {
+  background: var(
+    --Brand-Gradient,
+    linear-gradient(135deg, #02634c 15.86%, #02de83 62.42%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.bottomLeftBg{
+.bottomLeftBg {
   width: 2313.276px;
-height: 749.405px;
-transform: rotate(-13.72deg);
-flex-shrink: 0;
-background: url("../public/img/Ресурс_left_bottom.png");
-background-repeat: no-repeat;
-background-size: contain;
-z-index: -1;
+  height: 749.405px;
+  transform: rotate(-13.72deg);
+  flex-shrink: 0;
+  background: url("../public/img/Ресурс_left_bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
 }
-.topRightBg{
-  width:1133px;
+.topRightBg {
+  width: 1133px;
   height: 1749.405px;
   /* transform: rotate(-46.413deg); */
   flex-shrink: 0;
   background: url("../public/img/Ресурс_right_top.png");
   background-repeat: no-repeat;
   background-size: contain;
-z-index: -1;
+  z-index: -1;
 }
-.bottomRightBg{
-  width:1152px;
-  height:1528px;
+.bottomRightBg {
+  width: 1152px;
+  height: 1528px;
   flex-shrink: 0;
   background: url("../public/img/Ресурс_3.png");
   background-repeat: no-repeat;
   background-size: contain;
-z-index: -1;
+  z-index: -1;
 }
-.howwItBg{
-  width:100%;
-  height:643px;
+.howwItBg {
+  width: 1920px;
+  height: 749px;
   flex-shrink: 0;
   background: url("../public/img/Ресурс 2_1_4.png");
   background-repeat: no-repeat;
-  background-size: contain;
-z-index: -1;
+  background-size: cover;
+  z-index: -1;
 }
-.width-max70{
-  @apply max-w-[70%]
+.howwToBuyBg {
+  width: 100%;
+  height: 769px;
+  flex-shrink: 0;
+  background: url("../public/img/Group_5.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.bottomLeftBgOne {
+  width: 1974px;
+  height: 811px;
+  transform: rotate(-141.501deg);
+  flex-shrink: 0;
+  background: url("../public/img/Ресурс_2_1_6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.width-max70 {
+  @apply max-w-[70%];
+}
+.testimonial-slide-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1536px) {
+  .howwItBg{
+    background-size: contain;
+    height: 600px;
+    bottom: 2rem;
+  }
+  .width-max70 {
+    @apply max-w-[50%];
+  }
 }

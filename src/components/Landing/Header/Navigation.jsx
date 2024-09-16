@@ -1,25 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const navLink = [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "Vision",
+      url: "/",
+    },
+    {
+      name: "How it works",
+      url: "/",
+    },
+    {
+      name: "Tokenomics",
+      url: "/",
+    },
+    {
+      name: "Roadmap",
+      url: "/",
+    },
+    {
+      name: "Whitepaper",
+      url: "/",
+    },
+    {
+      name: "How to Buy",
+      url: "/",
+    },
+    {
+      name: "FAQ",
+      url: "/",
+    },
+  ]
   return (
-    <div className="min-h-[calc(100vh-203px)] flex flex-col justify-between bg-dark-black text-white">
+    <div className="min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white ">
       {/* Content in the center */}
-      <div className="flex flex-1 justify-center items-center">
+      <div className="flex flex-1 justify-center items-center max-w-[958px] mx-auto">
         <nav className="text-center space-y-4">
-          <div className="space-x-8">
-            <a href="#" className="text-lg">Home</a>
-            <a href="#" className="text-lg">Vision</a>
-            <a href="#" className="text-lg">How it works</a>
+          <div className="space-x-16">
+            {navLink.map((item) => (
+              <Link to={item.url} className="inline-flex text-3xl font-display pb-12 hover:opacity-60" key={item.name}>{item.name}</Link>
+            ))}
+           
           </div>
-          <div className="space-x-8">
-            <a href="#" className="text-lg">Tokenomics</a>
-            <a href="#" className="text-lg">Roadmap</a>
-            <a href="#" className="text-lg">Whitepaper</a>
-          </div>
-          <div className="space-x-8">
-            <a href="#" className="text-lg">How to Buy</a>
-            <a href="#" className="text-lg">FAQ</a>
-          </div>
+         
         </nav>
       </div>
 

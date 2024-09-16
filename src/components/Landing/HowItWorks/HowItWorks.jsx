@@ -5,9 +5,9 @@ import Button from "../../shared/Button";
 const HowItWorks = () => {
   return (
     <div className="mt-0">
-      <div className="text-center max-w-3xl mx-auto">
+      <div className="text-center max-w-xl 2xl:max-w-3xl mx-auto">
         <h2 className="uppercase">How It Works</h2>
-        <h3 className="pt-2 pb-3 font-bold leading-tight tracking-normal font-dmsans">
+        <h3 className="py-8 2xl:py-3 font-bold leading-tight tracking-normal font-dmsans">
           Own fractional shares of real estate investment across the world
         </h3>
         <p className="px-16">
@@ -17,7 +17,7 @@ const HowItWorks = () => {
       </div>
       <div className="flex items-center justify-between flex-col gap-10 mt-10 relative 2xl:max-w-[1514px] mx-auto">
         <div>
-          <img src="/img/howitworkproperty.png" alt="howitworks" className="mx-auto width-max70"/>
+          <img src="/img/howitworkproperty.png" alt="howitworks" className="mx-auto w-[60%] 2xl:width-max70"/>
           <div className="max-w-[420px] mx-auto text-center absolute left-1/2 -translate-x-1/2 -bottom-[273px]">
 
           <h5 className="text-2xl font-display font-normal uppercase pb-8">Future of ownership real estate</h5>

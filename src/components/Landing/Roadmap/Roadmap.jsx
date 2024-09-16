@@ -103,12 +103,12 @@ const roadmapItem = [
 ];
 const Roadmap = () => {
   return (
-    <>
-      <div className="px-20 py-40">
+    <div className="relative">
+      <div className="px-20 py-28 2xl:py-40">
         <h2 className="uppercase text-center">Roadmap</h2>
-        <div className="grid grid-cols-3  items-center gap-8 ">
+        <div className="grid grid-cols-3 gap-8 ">
           {roadmapItem.map((file) => (
-            <div className="px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-56 w-full">
+            <div className="px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-32 w-full">
               <div className="flex justify-between items-center px-8 py-6   bg-dark-black text-white rounded-full -mt-28">
                 <p className="uppercase font-normal font-display pr-4 text-white">
                   {file.phase}
@@ -153,14 +153,14 @@ const Roadmap = () => {
         </div>
       </div>
 
-      <div className="px-20 py-40">
+      <div className="px-20 py-20">
         <h2 className="uppercase text-center">How to Buy</h2>
         <div className="grid grid-cols-2  gap-8 ">
           <div className="px-12 py-16 rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-16 w-full bg-dark-black text-white">
             <h3 className="tracking-normal  leading-none font-normal pb-6">
               Method 1: Signup
             </h3>
-            <ul className="text-2md font-medium list-disc pl-6">
+            <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">
               <li>
                 Enter your first name, last name, phone number, and email
                 address.
@@ -189,7 +189,7 @@ const Roadmap = () => {
             <h3 className="tracking-normal  leading-none font-normal pb-6">
               Method 2: Wallet Connect
             </h3>
-            <ul className="text-2md font-medium list-disc pl-6">
+            <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">
               <li>Click on "Wallet Connect" at the top right.</li>
               <li>
                 Select Metamask/Trust Wallet or use the Wallet Connect option to
@@ -226,7 +226,8 @@ const Roadmap = () => {
               />
         </div>
       </div>
-    </>
+      <div className='howwToBuyBg absolute bottom-[446px] left-0 right-0 opacity-60'></div>
+    </div>
   );
 };
 

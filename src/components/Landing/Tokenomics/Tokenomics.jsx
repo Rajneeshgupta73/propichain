@@ -83,7 +83,7 @@ const Tokenomics = () => {
   return (
     <div className="px-20 pb-36">
       <div>
-        <h2 className="text-center mb-12">Tokenomics</h2>
+        <h2 className="text-center mb-12 uppercase">Tokenomics</h2>
         <div className="flex items-center gap-20">
           <div className="basis-1/3 flex justify-center">
             <img src="/img/tokenomics.png" alt="Tokenomics" />
@@ -104,8 +104,8 @@ const Tokenomics = () => {
         </div>
       </div>
       <div className="mt-24 text-center">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h3 className="font-dmsans pb-6 tracking-normal text-dark-black">
+        <div className="text-center 2xl:max-w-2xl mx-auto mb-12">
+          <h3 className="font-dmsans pb-4 2xl:pb-6 tracking-normal text-dark-black">
             Experience unmatched security and scalability with $DRT.
           </h3>
           <p className="mb-6">Enjoy these exclusive benefits: </p>

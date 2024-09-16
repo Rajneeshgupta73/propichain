@@ -47,19 +47,19 @@ function Timer() {
 
             <div className="flex text-3xl font-bold">
                 <div className="flex items-center">
-                    <h3 className='bg-dark-black p-8 rounded-[32px] text-white w-[123px]'>{formatNumber(timeLeft.days)}</h3>
+                    <h3 className='bg-dark-black px-6 py-7 2xl:p-8 rounded-[32px] text-white w-24 2xl:w-[123px] text-center leading-tight'>{formatNumber(timeLeft.days)}</h3>
                     <h3 className='mx-2'>:</h3>
                 </div>
                 <div className="flex items-center">
-                <h3 className='bg-dark-black p-8 rounded-[32px] text-white w-[123px]'>{formatNumber(timeLeft.hours)}</h3>
+                <h3 className='bg-dark-black px-6 py-7 2xl:p-8 rounded-[32px] text-white w-24 2xl:w-[123px] text-center leading-tight'>{formatNumber(timeLeft.hours)}</h3>
                     <h3 className='mx-2'>:</h3>
                 </div>
                 <div className="flex items-center">
-                <h3 className='bg-dark-black p-8 rounded-[32px] text-white w-[123px]'>{formatNumber(timeLeft.minutes)}</h3>
+                <h3 className='bg-dark-black px-6 py-7 2xl:p-8 rounded-[32px] text-white w-24 2xl:w-[123px] text-center leading-tight'>{formatNumber(timeLeft.minutes)}</h3>
                     <h3 className='mx-2'>:</h3>
                 </div>
                 <div className="flex items-center">
-                <h3 className='bg-dark-black p-8 rounded-[32px] text-white w-[123px]'>{formatNumber(timeLeft.seconds)}</h3>
+                <h3 className='bg-dark-black px-6 py-7 2xl:p-8 rounded-[32px] text-white w-24 2xl:w-[123px] text-center leading-tight'>{formatNumber(timeLeft.seconds)}</h3>
                 </div>
             </div>
     );
