@@ -21,6 +21,7 @@ export default {
         'green': '#2B8872',
         'primary-hover': '#4EA28E',
         'light-green': '#03DF84',
+        'gray-dark': '#B3B3B3',
       },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'], 
@@ -32,6 +33,9 @@ export default {
       },
       backgroundImage: {
         'brand-gradient': 'linear-gradient(135deg, #02634C 15.86%, #02DE83 62.42%)',
+      },
+      screens: {
+        'lg': '1279px',
       },
     },
   },

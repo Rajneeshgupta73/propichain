@@ -27,7 +27,7 @@ const Header = () => {
   }
   return (
     <>
-    <div className={`flex justify-between items-center px-10 py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
+    <div className={`flex justify-between items-center px-10 py-3 lg:py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
       <div>
         <Link to={"/"}><img src={isMenuOpen ? "/img/Black_Logo.svg" : "/img/Logo.svg"} alt="logo" className="max-lg:w-36"/></Link>
       </div>
@@ -41,7 +41,7 @@ const Header = () => {
           iconClassName="!mr-0"
         />
       </div>
-      <div className="flex items-center gap-2.5">
+      <div className="flex items-center gap-2.5 max-lg:hidden">
         <Button
           label="Connect Wallet"
           variant="secondary"
@@ -63,7 +63,7 @@ const Header = () => {
     {isMenuOpen && 
     ( 
       <>
-      <Navigation/>
+      <Navigation handleCloseMenu={handleCloseMenu}/>
       <Footer/>
       </>
     )}

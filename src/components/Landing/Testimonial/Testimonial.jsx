@@ -49,16 +49,16 @@ const Testimonial = () => {
   const isNextDisabled = currentIndex === testimonials.length - 1;
 
   return (
-    <div className="mt-[450px] 2xl:mt-[575px]">
+    <div className="mt-36 lg:mt-[450px] 2xl:mt-[575px] px-10 lg:px-20">
       <div className="text-center max-w-3xl mx-auto">
         <h4 className="pb-4 font-normal font-display text-2xl 2xl:text-3xl uppercase leading-9">
           How Derent simplifies the real estate value chain
         </h4>
-        <p className="px-16">
+        <p className="px-16 max-lg:text-base">
           One simple example of how Derent smart contracts work
         </p>
       </div>
-      <div className="relative max-w-[810px] mx-auto mt-24 text-center overflow-hidden">
+      <div className="relative max-w-[810px] mx-auto mt-16 lg:mt-24 text-center overflow-hidden">
         {/* Slide container */}
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -66,11 +66,11 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="flex-shrink-0 w-full">
-              <div className="flex mb-16 justify-center items-center">
+              <div className="flex mb-0 lg:mb-16 justify-center items-center">
                 <img src={testimonial.image1} alt="user1" className="w-80 h-80 2xl:w-[414px] 2xl:h-[414px] -mr-10" />
                 <img src={testimonial.image2} alt="user2" className="w-80 h-80 2xl:w-[414px] 2xl:h-[414px] -ml-10" />
               </div>
-              <h3 className="font-dmsans pb-6 tracking-normal">
+              <h3 className="font-dmsans pb-3 lg:pb-6 tracking-normal">
                 {testimonial.title}
               </h3>
               <p className="mb-6">{testimonial.description}</p>

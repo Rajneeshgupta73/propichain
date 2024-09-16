@@ -103,19 +103,20 @@ const roadmapItem = [
 ];
 const Roadmap = () => {
   return (
-    <div className="relative">
-      <div className="px-20 py-28 2xl:py-40">
-        <h2 className="uppercase text-center">Roadmap</h2>
-        <div className="grid grid-cols-3 gap-8 ">
+    <div className="relative" id="roadmap">
+      <div className='roadmapBg absolute -top-[283px] left-0 right-0 opacity-60'></div>
+      <div className="px-10 lg:px-20 py-24 lg:py-28 2xl:py-40">
+        <h2 className="uppercase text-center max-lg:mb-12">Roadmap</h2>
+        <div className="grid lg:grid-cols-3 gap-8 ">
           {roadmapItem.map((file) => (
-            <div className="px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-32 w-full">
+            <div className="px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-10 lg:mt-32 w-full">
               <div className="flex justify-between items-center px-8 py-6   bg-dark-black text-white rounded-full -mt-28">
                 <p className="uppercase font-normal font-display pr-4 text-white">
                   {file.phase}
                 </p>
                 <p
                   className={`${
-                    file.isStatus ? "text-light-green" : "text-gray-600"
+                    file.isStatus ? "text-light-green" : "text-gray-dark"
                   }`}
                 >
                   {file.status}
@@ -124,15 +125,15 @@ const Roadmap = () => {
                   )}
                 </p>
               </div>
-              <div className="mt-7">
-                <h3 className="tracking-normal text-dark-black leading-none font-normal">
+              <div className="mt-7 text-center">
+                <h3 className="max-lg:text-2xl tracking-normal text-dark-black leading-none font-normal">
                   {file.heading}
                 </h3>
-                <ul className="mt-6">
+                <ul className="mt-6 max-lg:flex justify-center items-start gap-2 flex-wrap">
                   {file.listItems.map((item) => (
-                    <li key={item.title} className="pb-2 flex last:pb-0">
+                    <li key={item.title} className="pb-2 flex last:pb-0 max-lg:items-center">
                       {item.checked ? <IconCheckedCircle /> : <IconCircle />}
-                      <p className="pl-2">{item.title}</p>
+                      <p className="pl-2 max-lg:text-base">{item.title}</p>
                     </li>
                   ))}
                 </ul>
@@ -140,7 +141,7 @@ const Roadmap = () => {
             </div>
           ))}
         </div>
-        <div className="mt-16 flex justify-center">
+        <div className="mt-16 flex justify-center" id="whitepaper">
           <Button
             variant="secondary"
             label="Whitepaper"
@@ -153,11 +154,11 @@ const Roadmap = () => {
         </div>
       </div>
 
-      <div className="px-20 py-20">
+      <div className="px-10 lg:px-20 py-20" id="howtobuy">
         <h2 className="uppercase text-center">How to Buy</h2>
-        <div className="grid grid-cols-2  gap-8 ">
-          <div className="px-12 py-16 rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-16 w-full bg-dark-black text-white">
-            <h3 className="tracking-normal  leading-none font-normal pb-6">
+        <div className="grid lg:grid-cols-2  gap-8 ">
+          <div className="px-6 lg:px-12 py-8 lg:py-16  rounded-3xl lg:rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-16 w-full bg-dark-black text-white">
+            <h3 className="max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
               Method 1: Signup
             </h3>
             <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">
@@ -185,8 +186,8 @@ const Roadmap = () => {
               <li>The tokens will be updated in your dashboard.</li>
             </ul>
           </div>
-          <div className="px-12 py-16 rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-16 w-full bg-white text-dark-black">
-            <h3 className="tracking-normal  leading-none font-normal pb-6">
+          <div className="px-6 lg:px-12 py-8 lg:py-16 rounded-3xl lg:rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-0 lg:mt-16 w-full bg-white text-dark-black">
+            <h3 className="max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
               Method 2: Wallet Connect
             </h3>
             <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">

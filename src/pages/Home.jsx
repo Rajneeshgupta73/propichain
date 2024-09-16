@@ -17,7 +17,7 @@ const Home = () => {
       <div className='bottomLeftBg absolute top-28 2xl:top-[305px] -left-[8%]'></div>
       <div className='topRightBg absolute top-0 -right-[127px]'></div>
       <div className='bottomRightBg absolute top-[1178px] -left-[219px]'></div>
-      {/* <div className='bottomLeftBgOne absolute top-[805px] -left-[811px]'></div> */}
+      <div className='tokenomicsBg absolute top-[4561px] -left-[373px]'></div>
         <Header/>
         <Banner/>
         <Round/>

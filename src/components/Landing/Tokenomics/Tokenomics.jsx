@@ -81,17 +81,17 @@ const featureItems = [
 ];
 const Tokenomics = () => {
   return (
-    <div className="px-20 pb-36">
+    <div className="px-10 lg:px-20 pb-24 lg:pb-36" id="tokenomics">
       <div>
         <h2 className="text-center mb-12 uppercase">Tokenomics</h2>
-        <div className="flex items-center gap-20">
-          <div className="basis-1/3 flex justify-center">
-            <img src="/img/tokenomics.png" alt="Tokenomics" />
+        <div className="lg:flex items-center gap-20">
+          <div className="lg:basis-1/3 flex justify-center max-lg:mb-20">
+            <img src="/img/tokenomics.png" alt="Tokenomics" className="max-lg:w-[400px] max-lg:h-[400px]"/>
           </div>
-          <div className="basis-2/3 flex flex-wrap gap-4">
+          <div className="lg:basis-2/3 flex flex-wrap gap-2 lg:gap-4 max-lg:justify-center">
             {tokenomicsItems.map((item) => (
               <div
-                className="flex py-7 px-12 gap-1 items-start rounded-[48px] border border-gray shadow1 bg-white flex-col"
+                className="flex py-6 lg:py-7 px-6 lg:px-12 gap-1 items-start rounded-2xl lg:rounded-[48px] border border-gray shadow1 bg-white flex-col"
                 key={item.name}
               >
                 <h3 className="font-normal font-display tracking-normal leading-normal uppercase">
@@ -103,21 +103,21 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 text-center">
-        <div className="text-center 2xl:max-w-2xl mx-auto mb-12">
+      <div className="mt-16 lg:mt-24 text-center">
+        <div className="text-center 2xl:max-w-2xl mx-auto mb-8 lg:mb-12">
           <h3 className="font-dmsans pb-4 2xl:pb-6 tracking-normal text-dark-black">
             Experience unmatched security and scalability with $DRT.
           </h3>
           <p className="mb-6">Enjoy these exclusive benefits: </p>
         </div>
-        <div className="flex flex-wrap gap-4 justify-center mb-12">
+        <div className="flex flex-wrap gap-4 justify-center mb-8 lg:mb-12">
           {featureItems.map((item) => (
             <div
-              className="flex py-5 px-6 gap-1 items-center rounded-[32px] border border-gray shadow1 bg-white flex-col max-w-80 text-center"
+              className="flex py-5 px-6 gap-1 items-center rounded-[32px] border border-gray shadow1 bg-white flex-col max-w-56 lg:max-w-80 text-center"
               key={item.name}
             >
               {item.icon}
-              <h5 className="text-xl font-bold pt-4">{item.name}</h5>
+              <h5 className="text-base lg:text-xl font-bold pt-4">{item.name}</h5>
               <p>{item.desciption}</p>
             </div>
           ))}

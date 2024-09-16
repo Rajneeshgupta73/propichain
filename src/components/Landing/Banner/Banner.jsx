@@ -6,7 +6,7 @@ const Banner = () => {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 600);
   return (
-    <div className="px-10 py-8">
+    <div className="px-10 py-8" id="home">
       {/* <img src="/img/Ресурс_right_top.png"/> */}
       <div className="flex items-center justify-between -mb-7 lg:mb-16">
         <p>Hassle-Free Real Estate</p>

@@ -3,7 +3,7 @@ import Button from '../../shared/Button';
 
 const Vision = () => {
   return (
-    <div className='px-10 mt-8 lg:mt-52 relative pb-[430px] lg:pb-[550px] 2xl:pb-[800px]'>
+    <div className='px-10 mt-8 lg:mt-52 relative pb-[430px] lg:pb-[550px] 2xl:pb-[800px]' id="vision">
         <div className='max-w-full lg:max-w-2xl 2xl:max-w-[800px] max-lg:flex max-lg:items-center max-lg:flex-col text-center'>
             <h2 className='uppercase'>Vision</h2>
             <h3 className='pt-8 pb-4 lg:pb-2 font-bold leading-tight tracking-normal font-dmsans text-lg lg:text-2xl 2xl:text-3xl'>DeRent's mission to revolutionize real estate using blockchain technology.</h3>
@@ -29,8 +29,8 @@ const Vision = () => {
             </div>
             
         </div>
-        <div className='absolute top-24 right-0 w-80 h-80 2xl:w-[400px] 2xl:h-[400px] max-lg:hidden'>
-                <img src='/img/Linked_Path.png' alt="Linked_Path" className='w-full'/>
+        <div className='absolute top-12 right-0 w-[400px] h-[400px] max-lg:hidden'>
+                <img src='/img/Linked_Path_Group.png' alt="Linked_Path" className='w-full'/>
             </div>
         <div className='howwItBg absolute bottom-56 left-0 right-0'></div>
     </div>

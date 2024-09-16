@@ -1,56 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../../shared/Button";
 
-const Navigation = () => {
+const Navigation = ({handleCloseMenu }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const navLink = [
     {
       name: "Home",
-      url: "/",
+      url: "home",
     },
     {
       name: "Vision",
-      url: "/",
+      url: "vision",
     },
     {
       name: "How it works",
-      url: "/",
+      url: "howitworks",
     },
     {
       name: "Tokenomics",
-      url: "/",
+      url: "tokenomics",
     },
     {
       name: "Roadmap",
-      url: "/",
+      url: "roadmap",
     },
     {
       name: "Whitepaper",
-      url: "/",
+      url: "whitepaper",
     },
     {
       name: "How to Buy",
-      url: "/",
+      url: "howtobuy",
     },
     {
       name: "FAQ",
-      url: "/",
+      url: "faq",
     },
   ]
+
+  const handleLinkClick = (id) => {
+    // Close the menu
+    setMenuOpen(false);
+
+    // Scroll to the section
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 700,
+        behavior: "smooth",
+      });
+    }
+    handleCloseMenu();
+  };
   return (
-    <div className="min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white ">
+    <div className="max-lg:max-h-[calc(100vh-273px)] min-h-[calc(100vh-273px)] lg:min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white max-lg:overflow-y-auto">
       {/* Content in the center */}
-      <div className="flex flex-1 justify-center items-center max-w-[958px] mx-auto">
+      <div className="flex flex-1 justify-center items-center max-w-[958px] mx-auto max-lg:py-8">
         <nav className="text-center space-y-4">
-          <div className="space-x-16">
+          <div className="lg:space-x-16">
             {navLink.map((item) => (
-              <Link to={item.url} className="inline-flex text-3xl font-display pb-12 hover:opacity-60" key={item.name}>{item.name}</Link>
+              // <Link to={item.url} className="flex lg:inline-flex text-2xl lg:text-3xl font-display pb-6 lg:pb-12 hover:opacity-60 max-lg:justify-center" key={item.name}>{item.name}</Link>
+              <button
+                key={item.name}
+                onClick={() => handleLinkClick(item.url)}
+                className="flex lg:inline-flex text-2xl lg:text-3xl font-display pb-6 lg:pb-12 hover:opacity-60 max-lg:justify-center max-lg:w-full"
+              >
+                {item.name}
+              </button>
             ))}
            
           </div>
          
         </nav>
       </div>
-
+      <div className="flex items-center gap-4 mt-8 mb-16 max-lg:justify-center lg:hidden">
+              <Button
+                label="How to Buy"
+                icon="/img/Money_fill.svg"
+                alt="Money_fill"
+                onClick={() => {}}
+                position="end"
+                className="uppercase font-display font-normal z-30"
+              />
+              <Button
+                label="Learn More"
+                variant="secondary"
+                icon="/img/Info.svg"
+                alt="info"
+                onClick={() => {}}
+                position="end"
+                className="uppercase  font-display font-normal text-dark-black"
+              />
+            </div>
     
     </div>
   );

@@ -45,37 +45,40 @@ function Timer() {
 
   return (
     <div className="flex text-3xl font-bold max-lg:justify-center">
-      <div>
-        <div className="flex items-center">
-          <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
-            {formatNumber(timeLeft.days)}{" "}
-          </h3>
-          <h3 className="mx-2">:</h3>
-        </div>
-        <p className="text-sm uppercase font-display pt-1">Days</p>
+      <div className="flex">
+        <div className="text-center">
+            <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
+              {formatNumber(timeLeft.days)}{" "}
+            </h3>
+            <p className="text-sm uppercase font-display pt-1">Days</p>
+          </div>
+          <h3 className="mx-2 mt-4">:</h3>
+     
+        
       </div>
-      <div>
-        <div className="flex items-center">
+      <div className="flex">
+        <div className="text-center">
           <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
             {formatNumber(timeLeft.hours)}
           </h3>
-          <h3 className="mx-2">:</h3>
+          <p className="text-sm uppercase font-display pt-1">Hours</p>
         </div>
-        <p className="text-sm uppercase font-display pt-1">Hours</p>
+        <h3 className="mx-2  mt-4">:</h3>
+        
       </div>
-      <div>
-      <div className="flex items-center">
+      <div className="flex">
+      <div className="text-center">
         
           <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
             {formatNumber(timeLeft.minutes)}
           </h3>
-          <h3 className="mx-2">:</h3>
+          <p className="text-sm uppercase font-display pt-1">Minutes</p>
         </div>
- 
-        <p className="text-sm uppercase font-display pt-1">Minutes</p>
+        <h3 className="mx-2 mt-4">:</h3>
+        
       </div>
       <div className="flex items-center">
-        <div>
+        <div className="text-center">
           <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
             {formatNumber(timeLeft.seconds)}
           </h3>

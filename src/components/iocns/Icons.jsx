@@ -316,6 +316,42 @@ const IconRightArrow = () => {
   );
 };
 
+const IconTabTopLeft = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="121" height="168" viewBox="0 0 121 168" fill="none" className={className}
+    {...props}>
+    <path d="M1.5 167L100.5 105L119.5 1" stroke="#B3B3B3" stroke-width="2"/>
+  </svg>
+  );
+};
+
+const IconTabBottomLeft = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="269" viewBox="0 0 60 269" fill="none" className={className}
+    {...props}>
+  <path d="M1.5 269V95.5L58.5 1" stroke="#B3B3B3" stroke-width="2"/>
+</svg>
+  );
+};
+
+const IconTabBottomRight = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="269" viewBox="0 0 40 269" fill="none" className={className}
+    {...props}>
+  <path d="M34 268.5L38.5 95L1.5 1" stroke="#B3B3B3" stroke-width="2"/>
+</svg>
+  );
+};
+
+const IconTabTopRight = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="149" height="140" viewBox="0 0 149 140" fill="none" className={className}
+    {...props}>
+  <path d="M148 139L29 83.5L1.5 1" stroke="#B3B3B3" stroke-width="2"/>
+</svg>
+  );
+};
+
 export {
   IconArrow,
   IconUserArrow,
@@ -332,5 +368,9 @@ export {
   IconCheckedCircle,
   IconCircle,
   IconLeftArrow,
-  IconRightArrow
+  IconRightArrow,
+  IconTabTopLeft,
+  IconTabBottomLeft,
+  IconTabBottomRight,
+  IconTabTopRight
 };
