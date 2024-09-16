@@ -8,15 +8,15 @@ const Banner = () => {
   return (
     <div className="px-10 py-8">
       {/* <img src="/img/Ресурс_right_top.png"/> */}
-      <div className="flex items-center justify-between mb-16">
+      <div className="flex items-center justify-between -mb-7 lg:mb-16">
         <p>Hassle-Free Real Estate</p>
         <p>Future of Real Estate</p>
       </div>
-      <div className="flex">
-        <div className="basis-1/2">
+      <div className="flex max-lg:flex-wrap max-lg:justify-center">
+        <div className="lg:basis-1/2 max-lg:mb-16">
           <div className="w-[450px] h-[450px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-gray relative flex justify-center items-center">
             <div className="w-[372px] h-[372px] 2xl:w-[522px] 2xl:h-[522px] rounded-full border-[30px] border-white">
-              <div className="absolute w-[900px] h-[704px] -left-[67px] top-16 2xl:top-20">
+              <div className="absolute w-[900px] h-[450px] lg:h-[704px] -left-[67px] top-16 2xl:top-20">
                 <img
                   src="/img/property_img.png"
                   alt="banner_img"
@@ -26,17 +26,17 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="basis-1/2 pl-16">
-          <h3 className="textGradient uppercase pb-6">Tokenization</h3>
-          <h1 className="text-[40px] 2xl:text-[74px] font-display uppercase leading-[46px] 2xl:leading-[88px] pb-4 2xl:max-w-[934px] max-2xl:max-w-[500px]">
+        <div className="lg:basis-1/2 lg:pl-16 max-lg:text-center max-lg:flex max-lg:items-center max-lg:flex-col">
+          <h3 className="textGradient uppercase pb-6 max-lg:text-xl">Tokenization</h3>
+          <h1 className="text-3xl lg:text-[40px] 2xl:text-[74px] font-display uppercase leading-[36px] lg:leading-[46px] 2xl:leading-[88px] pb-4 2xl:max-w-[934px] max-2xl:max-w-[500px]">
             Revolutionize Real Estate with DeRent
           </h1>
-          <div className="max-w-xl mb-20">
+          <div className="lg:max-w-xl mb-20">
             <p>
               Unlock the Future of Property Ownership with Blockchain-Powered
               Solutions
             </p>
-            <div className="flex items-center gap-4 mt-8 mb-16">
+            <div className="flex items-center gap-4 mt-8 mb-16 max-lg:justify-center">
               <Button
                 label="How to Buy"
                 icon="/img/Money_fill.svg"
@@ -63,7 +63,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="flex items-center justify-between gap-4">
-        <h4 className="text-xl 2xl:text-2xl font-display font-normal uppercase">
+        <h4 className="text-base lg;text-xl 2xl:text-2xl font-display font-normal uppercase">
           DeRent Platform
         </h4>
         <div>
@@ -76,7 +76,7 @@ const Banner = () => {
             className="text-sm !px-3 !py-2 font-dmsans text-gray !rounded-md hover:bg-primary-hover"
           />
         </div>
-        <h4 className="text-xl 2xl:text-2xl font-display font-normal uppercase">
+        <h4 className="text-base lg;text-xl 2xl:text-2xl font-display font-normal uppercase">
           $DRT Token
         </h4>
       </div>

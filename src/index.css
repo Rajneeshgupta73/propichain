@@ -51,13 +51,13 @@
     @apply overflow-hidden;
   }
   h3 {
-    @apply text-2xl 2xl:text-3xl font-bold font-display tracking-[3.4px] 2xl:tracking-[5.44px] leading-9;
+    @apply text-lg lg:text-2xl 2xl:text-3xl font-bold font-display tracking-[3.4px] 2xl:tracking-[5.44px] leading-9;
   }
   h2 {
-    @apply text-5xl 2xl:text-[64px] font-normal font-display;
+    @apply text-3xl lg:text-5xl 2xl:text-[64px] font-normal font-display;
   }
   p {
-    @apply text-base 2xl:text-2md font-medium text-light-black;
+    @apply text-sm lg:text-base 2xl:text-2md font-medium text-light-black;
   }
 }
 .shadow1 {
@@ -152,4 +152,31 @@
   .width-max70 {
     @apply max-w-[50%];
   }
+}
+@media screen and (max-width: 1024px) {
+.bottomLeftBg{
+  background-image: url("../public/img/Ресурс_tab_1.png");
+  width: 1000px;
+  transform: rotate(-2.72deg);
+}
+.topRightBg{
+  background-image: url("../public/img/Ресурс_tab_2.png");
+  width: 1137px;
+  height: 467px;
+  transform: rotate(-50.397deg);
+  opacity: 0.15;
+  top: 1037px;
+  right: -517px;
+}
+.bottomRightBg{
+  background-image: url("../public/img/Ресурс_tab_3.png");
+  width: 543px;
+  height: 1158px;
+  transform: rotate(-169.606deg);
+  top: 1012px;
+  left: -143px;
+}
+.howwItBg {
+  height: 450px;
+}
 }

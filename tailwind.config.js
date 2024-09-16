@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    breakpoints: {
+      "1xl": "1366px",
+    },
     extend: {
       colors: {
         'primary': '#2B8872',

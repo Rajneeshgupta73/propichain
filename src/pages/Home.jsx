@@ -14,7 +14,7 @@ import Faq from '../components/Landing/Faq/Faq'
 const Home = () => {
   return (
     <div className='relative overflow-hidden'>
-      <div className='bottomLeftBg absolute top-40 2xl:top-[305px] -left-[8%]'></div>
+      <div className='bottomLeftBg absolute top-28 2xl:top-[305px] -left-[8%]'></div>
       <div className='topRightBg absolute top-0 -right-[127px]'></div>
       <div className='bottomRightBg absolute top-[1178px] -left-[219px]'></div>
       {/* <div className='bottomLeftBgOne absolute top-[805px] -left-[811px]'></div> */}

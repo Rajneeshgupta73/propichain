@@ -29,7 +29,7 @@ const Header = () => {
     <>
     <div className={`flex justify-between items-center px-10 py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
       <div>
-        <Link to={"/"}><img src={isMenuOpen ? "/img/Black_Logo.svg" : "/img/Logo.svg"} alt="logo" /></Link>
+        <Link to={"/"}><img src={isMenuOpen ? "/img/Black_Logo.svg" : "/img/Logo.svg"} alt="logo" className="max-lg:w-36"/></Link>
       </div>
       <div>
         <Button
@@ -48,7 +48,7 @@ const Header = () => {
           icon="/img/Wallet_alt.svg"
           alt="Wallet_alt"
           onClick={() => {}}
-          className="text-sm !px-6 !py-2.5 font-dmsans"
+          className="text-xs lg:text-sm !px-6 !py-2.5 font-dmsans"
         />
         <Button
           label="Log In"
@@ -56,7 +56,7 @@ const Header = () => {
           icon="/img/Sign_in_circle.svg"
           alt="Sign_in_circle"
           onClick={() => {}}
-          className="text-sm !px-6 !py-2.5 font-dmsans"
+          className="text-xs lg:text-sm !px-6 !py-2.5 font-dmsans"
         />
       </div>
     </div>
