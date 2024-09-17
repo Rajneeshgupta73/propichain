@@ -27,7 +27,7 @@ const Header = () => {
   }
   return (
     <>
-    <div className={`flex justify-between items-center px-10 py-3 lg:py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
+    <div className={`flex justify-between items-center px-5 sm:px-10 py-3 lg:py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
       <div>
         <Link to={"/"}><img src={isMenuOpen ? "/img/Black_Logo.svg" : "/img/Logo.svg"} alt="logo" className="max-lg:w-36"/></Link>
       </div>
@@ -37,7 +37,7 @@ const Header = () => {
           icon={isMenuOpen ? "/img/Close_round.svg" : "/img/Menu.svg"}
           alt={isMenuOpen ? "Close Menu" : "Open Menu"}
           onClick={isMenuOpen ? handleCloseMenu :handleOpenMenu}
-          className="flex justify-center items-center border-2 border-light-gray rounded-full w-10 h-10 !p-0 hover:bg-gray"
+          className="flex justify-center items-center border-2 border-light-gray rounded-full w-7 sm:w-10 h-7 sm:h-10 !p-0 hover:bg-gray"
           iconClassName="!mr-0"
         />
       </div>

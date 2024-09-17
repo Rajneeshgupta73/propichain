@@ -21,7 +21,7 @@ const Button = ({
     }
   };
 
-  const buttonClasses = `${getButtonClasses()} rounded-2xl py-3 lg:py-4 px-8 inline-flex items-center justify-center font-bold font-display text-sm 2xl:text-base`;
+  const buttonClasses = `${getButtonClasses()} rounded-2xl py-3 lg:py-4 px-8 inline-flex items-center justify-center font-bold font-display text-xs sm:text-sm 2xl:text-base`;
   const size = "h-6 w-6";
   return (
     <button onClick={onClick} className={`${buttonClasses} ${className}`}>

@@ -54,7 +54,7 @@ const Navigation = ({handleCloseMenu }) => {
     handleCloseMenu();
   };
   return (
-    <div className="max-lg:max-h-[calc(100vh-273px)] min-h-[calc(100vh-273px)] lg:min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white max-lg:overflow-y-auto">
+    <div className="max-sm:max-h-[calc(100vh-254px)] max-lg:max-h-[calc(100vh-273px)] min-h-[calc(100vh-273px)] lg:min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white max-lg:overflow-y-auto">
       {/* Content in the center */}
       <div className="flex flex-1 justify-center items-center max-w-[958px] mx-auto max-lg:py-8">
         <nav className="text-center space-y-4">
@@ -64,7 +64,7 @@ const Navigation = ({handleCloseMenu }) => {
               <button
                 key={item.name}
                 onClick={() => handleLinkClick(item.url)}
-                className="flex lg:inline-flex text-2xl lg:text-3xl font-display pb-6 lg:pb-12 hover:opacity-60 max-lg:justify-center max-lg:w-full"
+                className="flex lg:inline-flex text-sm sm:text-2xl lg:text-3xl font-display pb-6 lg:pb-12 hover:opacity-60 max-lg:justify-center max-lg:w-full"
               >
                 {item.name}
               </button>
@@ -74,14 +74,14 @@ const Navigation = ({handleCloseMenu }) => {
          
         </nav>
       </div>
-      <div className="flex items-center gap-4 mt-8 mb-16 max-lg:justify-center lg:hidden">
+      <div className="flex items-center gap-4 mt-8 mb-6 max-lg:justify-center lg:hidden max-sm:flex-wrap max-sm:px-5">
               <Button
                 label="How to Buy"
                 icon="/img/Money_fill.svg"
                 alt="Money_fill"
                 onClick={() => {}}
                 position="end"
-                className="uppercase font-display font-normal z-30"
+                className="uppercase font-display font-normal z-30 max-sm:w-full"
               />
               <Button
                 label="Learn More"
@@ -90,7 +90,7 @@ const Navigation = ({handleCloseMenu }) => {
                 alt="info"
                 onClick={() => {}}
                 position="end"
-                className="uppercase  font-display font-normal text-dark-black"
+                className="uppercase  font-display font-normal text-dark-black max-sm:w-full"
               />
             </div>
     

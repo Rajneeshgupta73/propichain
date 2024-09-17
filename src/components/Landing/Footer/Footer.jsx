@@ -73,7 +73,7 @@ const Footer = ({ isMainMenu = false }) => {
   };
   return (
     <footer
-      className={`bg-dark-black text-white px-20 ${
+      className={`bg-dark-black text-white px-5 sm:px-10 lg:px-20 ${
         !isMainMenu ? "py-8" : "max-lg:pt-12 lg:py-20 max-lg:pb-4"
       }`}
     >
@@ -102,15 +102,15 @@ const Footer = ({ isMainMenu = false }) => {
       <div
         className={`text-sm text-center flex justify-between items-center max-lg:flex-wrap max-lg:justify-center`}
       >
-        <div className="text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full">
+        <div className="text-[10px] sm:text-sm 2xl:text-lg max-lg:order-2 max-lg:basis-full">
           &copy; 2024 DeRent. All Right Reserved
         </div>
         <div className="flex lg:space-x-24 items-center max-lg:flex-wrap max-lg:justify-center">
           <div className="flex space-x-24 max-lg:order-2 max-lg:mb-8">
-            <Link to={"/"} className="underline text-extra-light/60 text-xl">
+            <Link to={"/"} className="underline text-extra-light/60 max-w-sm:font-normal text-xs sm:text-xl">
               Terms of Use
             </Link>
-            <Link to={"/"} className="underline text-extra-light/60 text-xl">
+            <Link to={"/"} className="underline text-extra-light/60 max-w-sm:font-normal text-xs sm:text-xl">
               Privacy Policy
             </Link>
           </div>

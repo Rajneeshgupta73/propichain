@@ -47,42 +47,42 @@ function Timer() {
     <div className="flex text-3xl font-bold max-lg:justify-center">
       <div className="flex">
         <div className="text-center">
-            <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
+            <h3 className="bg-dark-black px-4 sm:px-6 py-3 sm:py-5 lg:py-7 2xl:p-8 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-sm:text-sm max-lg:text-base">
               {formatNumber(timeLeft.days)}{" "}
             </h3>
-            <p className="text-sm uppercase font-display pt-1">Days</p>
+            <p className="text-[10px] sm:text-sm uppercase font-display pt-1">Days</p>
           </div>
-          <h3 className="mx-2 mt-4">:</h3>
+          <h3 className="mx-2 mt-1.5 sm:mt-4">:</h3>
      
         
       </div>
       <div className="flex">
         <div className="text-center">
-          <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
+        <h3 className="bg-dark-black px-4 sm:px-6 py-3 sm:py-5 lg:py-7 2xl:p-8 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-sm:text-sm max-lg:text-base">
             {formatNumber(timeLeft.hours)}
           </h3>
-          <p className="text-sm uppercase font-display pt-1">Hours</p>
+          <p className="text-[10px] sm:text-sm uppercase font-display pt-1">Hours</p>
         </div>
-        <h3 className="mx-2  mt-4">:</h3>
+        <h3 className="mx-2 mt-1.5 sm:mt-4">:</h3>
         
       </div>
       <div className="flex">
       <div className="text-center">
         
-          <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
+      <h3 className="bg-dark-black px-4 sm:px-6 py-3 sm:py-5 lg:py-7 2xl:p-8 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-sm:text-sm max-lg:text-base">
             {formatNumber(timeLeft.minutes)}
           </h3>
-          <p className="text-sm uppercase font-display pt-1">Minutes</p>
+          <p className="text-[10px] sm:text-sm uppercase font-display pt-1">Minutes</p>
         </div>
-        <h3 className="mx-2 mt-4">:</h3>
+        <h3 className="mx-2 mt-1.5 sm:mt-4">:</h3>
         
       </div>
       <div className="flex items-center">
         <div className="text-center">
-          <h3 className="bg-dark-black px-6 py-5 lg:py-7 2xl:p-8 rounded-3xl lg:rounded-[32px] text-white w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-lg:text-base">
+        <h3 className="bg-dark-black px-4 sm:px-6 py-3 sm:py-5 lg:py-7 2xl:p-8 rounded-2xl sm:rounded-3xl lg:rounded-[32px] text-white w-[55px] sm:w-20 lg:w-24 2xl:w-[123px] text-center leading-tight max-sm:text-sm max-lg:text-base">
             {formatNumber(timeLeft.seconds)}
           </h3>
-          <p className="text-sm uppercase font-display pt-1">Seconds</p>
+          <p className="text-[10px] sm:text-sm uppercase font-display pt-1">Seconds</p>
         </div>
       </div>
     </div>
