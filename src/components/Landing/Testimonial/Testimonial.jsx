@@ -49,12 +49,12 @@ const Testimonial = () => {
   const isNextDisabled = currentIndex === testimonials.length - 1;
 
   return (
-    <div className="mt-36 lg:mt-[450px] 2xl:mt-[575px] px-10 lg:px-20">
+    <div className="mt-16 sm:mt-36 lg:mt-[450px] 2xl:mt-[575px] px-5 sm:px-10 lg:px-20">
       <div className="text-center max-w-3xl mx-auto">
-        <h4 className="pb-4 font-normal font-display text-2xl 2xl:text-3xl uppercase leading-9">
+        <h4 className="pb-4 font-normal font-display text-2xl 2xl:text-3xl uppercase leading-9 max-sm:leading-tight">
           How Derent simplifies the real estate value chain
         </h4>
-        <p className="px-16 max-lg:text-base">
+        <p className="sm:px-16 max-sm:text-xs max-lg:text-base">
           One simple example of how Derent smart contracts work
         </p>
       </div>
@@ -66,11 +66,11 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="flex-shrink-0 w-full">
-              <div className="flex mb-0 lg:mb-16 justify-center items-center">
-                <img src={testimonial.image1} alt="user1" className="w-80 h-80 2xl:w-[414px] 2xl:h-[414px] -mr-10" />
-                <img src={testimonial.image2} alt="user2" className="w-80 h-80 2xl:w-[414px] 2xl:h-[414px] -ml-10" />
+              <div className="flex mb-6 sm:mb-0 lg:mb-16 justify-center items-center">
+                <img src={testimonial.image1} alt="user1" className="w-[150px] sm:w-80 h-[150px] sm:h-80 2xl:w-[414px] 2xl:h-[414px] -mr-6 sm:-mr-10" />
+                <img src={testimonial.image2} alt="user2" className="w-[150px] sm:w-80 h-[150px] sm:h-80 2xl:w-[414px] 2xl:h-[414px] -ml-6 sm:-ml-10" />
               </div>
-              <h3 className="font-dmsans pb-3 lg:pb-6 tracking-normal">
+              <h3 className="font-dmsans pb-3 lg:pb-6 tracking-normal max-sm:text-base max-sm:leading-tight text-dark-black">
                 {testimonial.title}
               </h3>
               <p className="mb-6">{testimonial.description}</p>
@@ -83,7 +83,7 @@ const Testimonial = () => {
           <button
             onClick={handlePrev}
             disabled={isPrevDisabled}
-            className={`px-8 py-4 border rounded-full border-gray`}
+            className={`px-6 sm:px-8 py-3 sm:py-4 border rounded-full border-gray`}
           >
             <IconLeftArrow />
           </button>
@@ -94,7 +94,7 @@ const Testimonial = () => {
           <button
             onClick={handleNext}
             disabled={isNextDisabled}
-            className={`px-8 py-4 rounded-full bg-green text-white`}
+            className={`px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-green text-white`}
           >
             <IconRightArrow />
           </button>
@@ -106,7 +106,7 @@ const Testimonial = () => {
           alt="Money_fill"
           onClick={() => {}}
           position="end"
-          className="uppercase font-display font-normal z-30 mt-8"
+          className="uppercase font-display font-normal z-30 mt-8 max-sm:w-full max-sm:text-sm"
         />
       </div>
     </div>

@@ -11,10 +11,10 @@ const AccordionItem = ({ title, content }) => {
   return (
     <div className="border-b border-gray">
       <button
-        className="w-full text-left py-5 px-6 flex justify-between items-center focus:outline-none"
+        className="w-full text-left py-5 px-4 sm:px-6 flex justify-between items-center focus:outline-none"
         onClick={toggleAccordion}
       >
-        <span className="text-2xl 2xl:text-3xl font-medium">{title}</span>
+        <span className="text-base sm:text-2xl 2xl:text-3xl font-semibold sm:font-medium">{title}</span>
         <span className="text-2xl">
           {isOpen ? '-' : '+'}
         </span>
@@ -24,7 +24,7 @@ const AccordionItem = ({ title, content }) => {
           isOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <p className="px-6 pt-2 pb-6 max-w-2xl">{content}</p>
+        <p className="px-4 sm:px-6 pt-2 pb-6 max-w-2xl max-sm:text-sm">{content}</p>
       </div>
     </div>
   );
@@ -51,7 +51,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="px-10 lg:px-20 mt-10 mb-24 lg:mb-40" id="faq">
+    <div className="px-5 sm:px-10 lg:px-20 mt-20 sm:mt-10 mb-24 lg:mb-40" id="faq">
       <h2 className="uppercase mb-8 lg:mb-12">Frequently Asked Question</h2>
       {accordionData.map((item, index) => (
         <AccordionItem key={index} title={item.title} content={item.content} />

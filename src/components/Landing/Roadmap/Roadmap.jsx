@@ -105,13 +105,13 @@ const Roadmap = () => {
   return (
     <div className="relative" id="roadmap">
       <div className='roadmapBg absolute -top-[283px] left-0 right-0 opacity-60'></div>
-      <div className="px-10 lg:px-20 py-24 lg:py-28 2xl:py-40">
+      <div className="px-5 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-28 2xl:py-40">
         <h2 className="uppercase text-center max-lg:mb-12">Roadmap</h2>
-        <div className="grid lg:grid-cols-3 gap-8 ">
+        <div className="grid lg:grid-cols-3 gap-2 sm:gap-8 ">
           {roadmapItem.map((file) => (
-            <div className="px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-10 lg:mt-32 w-full">
-              <div className="flex justify-between items-center px-8 py-6   bg-dark-black text-white rounded-full -mt-28">
-                <p className="uppercase font-normal font-display pr-4 text-white">
+            <div className="px-6 sm:px-[48px] pt-[72px] pb-8 rounded-[48px] border border-gray shadow1 bg-white mx-auto flex-col justify-center relative mt-10 lg:mt-32 w-full">
+              <div className="flex justify-between items-center px-8 py-4 sm:py-6   bg-dark-black text-white rounded-full -mt-24 sm:-mt-28">
+                <p className="uppercase font-normal font-display pr-4 text-white max-sm:text-sm">
                   {file.phase}
                 </p>
                 <p
@@ -121,19 +121,19 @@ const Roadmap = () => {
                 >
                   {file.status}
                   {file.isStatus && (
-                    <span className="bg-light-green inline-block w-2.5 h-2.5 rounded-full ml-1"></span>
+                    <span className="bg-light-green inline-block w-2.5 h-2.5 rounded-full ml-2"></span>
                   )}
                 </p>
               </div>
               <div className="mt-7 text-center">
-                <h3 className="max-lg:text-2xl tracking-normal text-dark-black leading-none font-normal">
+                <h3 className="max-sm:text-lg  max-lg:text-2xl tracking-normal text-dark-black leading-none font-normal">
                   {file.heading}
                 </h3>
-                <ul className="mt-6 max-lg:flex justify-center items-start gap-2 flex-wrap">
+                <ul className="mt-4 sm:mt-6 max-lg:flex justify-center items-start gap-1 sm:gap-2 flex-wrap">
                   {file.listItems.map((item) => (
-                    <li key={item.title} className="pb-2 flex last:pb-0 max-lg:items-center">
+                    <li key={item.title} className="sm:pb-2 flex last:pb-0 max-lg:items-center">
                       {item.checked ? <IconCheckedCircle /> : <IconCircle />}
-                      <p className="pl-2 max-lg:text-base">{item.title}</p>
+                      <p className="pl-2 max-sm:text-xs max-lg:text-base">{item.title}</p>
                     </li>
                   ))}
                 </ul>
@@ -141,7 +141,7 @@ const Roadmap = () => {
             </div>
           ))}
         </div>
-        <div className="mt-16 flex justify-center" id="whitepaper">
+        <div className="mt-8 sm:mt-16 flex justify-center" id="whitepaper">
           <Button
             variant="secondary"
             label="Whitepaper"
@@ -149,19 +149,19 @@ const Roadmap = () => {
             alt="Money_fill"
             onClick={() => {}}
             position="end"
-            className="uppercase font-display font-normal z-30"
+            className="uppercase font-display font-normal z-30 max-sm:w-full max-sm:text-sm"
           />
         </div>
       </div>
 
-      <div className="px-10 lg:px-20 py-20" id="howtobuy">
+      <div className="px-5 sm:px-10 lg:px-20 py-12 sm:py-20" id="howtobuy">
         <h2 className="uppercase text-center">How to Buy</h2>
         <div className="grid lg:grid-cols-2  gap-8 ">
           <div className="px-6 lg:px-12 py-8 lg:py-16  rounded-3xl lg:rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-16 w-full bg-dark-black text-white">
-            <h3 className="max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
+            <h3 className="max-sm:text-lg max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
               Method 1: Signup
             </h3>
-            <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">
+            <ul className="text-sm sm:text-base 2xl:text-2md font-medium list-disc pl-6">
               <li>
                 Enter your first name, last name, phone number, and email
                 address.
@@ -187,10 +187,10 @@ const Roadmap = () => {
             </ul>
           </div>
           <div className="px-6 lg:px-12 py-8 lg:py-16 rounded-3xl lg:rounded-[48px] border border-gray shadow1 mx-auto flex-col justify-center relative mt-0 lg:mt-16 w-full bg-white text-dark-black">
-            <h3 className="max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
+            <h3 className="max-sm:text-lg max-lg:font-2xl tracking-normal  leading-none font-normal pb-6">
               Method 2: Wallet Connect
             </h3>
-            <ul className="text-base 2xl:text-2md font-medium list-disc pl-6">
+            <ul className="text-sm sm:text-base 2xl:text-2md font-medium list-disc pl-6">
               <li>Click on "Wallet Connect" at the top right.</li>
               <li>
                 Select Metamask/Trust Wallet or use the Wallet Connect option to
@@ -216,14 +216,14 @@ const Roadmap = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-16 flex justify-center">
+        <div className="mt-8 sm:mt-16 flex justify-center">
         <Button
                 label="PURCHASE PRESALE"
                 icon="/img/Money_fill.svg"
                 alt="Money_fill"
                 onClick={() => {}}
                 position="end"
-                className="uppercase font-display font-normal z-30"
+                className="uppercase font-display font-normal z-30 max-sm:w-full max-sm:text-sm"
               />
         </div>
       </div>
