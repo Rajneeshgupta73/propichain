@@ -13,7 +13,7 @@ const Banner = () => {
         <p className="max-sm:max-w-28 max-sm:text-right max-sm:text-sm">Future of Real Estate</p>
       </div>
       <div className="flex max-lg:flex-wrap max-lg:justify-center">
-        <div className="lg:basis-1/2 max-sm:mb-8 max-lg:mb-16">
+        <div className="lg:basis-1/2 max-sm:mb-8 max-lg:mb-16 ml-10">
           <div className="w-[281px] h-[281px] sm:w-[450px] sm:h-[450px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-gray relative flex justify-center items-center">
             <div className="w-[211px] sm:w-[372px] h-[211px] sm:h-[372px] 2xl:w-[522px] 2xl:h-[522px] rounded-full border-[30px] border-white">
               <div className="absolute w-[600px] sm:w-[900px] sm:h-[450px] lg:h-[704px] -left-12 sm:-left-[67px] top-8 sm:top-16 2xl:top-20">
@@ -53,7 +53,6 @@ const Banner = () => {
                 onClick={() => {}}
                 position="end"
                 className="uppercase  font-display font-normal max-sm:w-full"
-                infoIcon={true}
               />
             </div>
             <h3 className="uppercase mb-4 sm:mb-6">

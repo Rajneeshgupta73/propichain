@@ -83,7 +83,7 @@ const Testimonial = () => {
           <button
             onClick={handlePrev}
             disabled={isPrevDisabled}
-            className={`px-6 sm:px-8 py-3 sm:py-4 border rounded-full border-gray`}
+            className={`px-6 sm:px-8 py-3 sm:py-4 border rounded-full border-gray bg-white`}
           >
             <IconLeftArrow />
           </button>

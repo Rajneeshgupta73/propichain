@@ -81,7 +81,7 @@ const featureItems = [
 ];
 const Tokenomics = () => {
   return (
-    <div className="px-5 sm:px-10 lg:px-20 pb-12 sm:pb-24 lg:pb-36 z-30" id="tokenomics">
+    <div className="px-5 sm:px-10 lg:px-20 pb-12 sm:pb-24 lg:pb-36 z-30 relative" id="tokenomics">
       <div>
         <h2 className="text-center mb-12 uppercase">Tokenomics</h2>
         <div className="lg:flex items-center gap-20">
@@ -103,7 +103,7 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 lg:mt-24 text-center">
+      <div className="mt-16 lg:mt-24 text-center z-30 relative">
         <div className="text-center 2xl:max-w-2xl mx-auto mb-8 lg:mb-12">
           <h3 className="font-dmsans pb-2 sm:pb-4 2xl:pb-6 tracking-normal text-dark-black">
             Experience unmatched security and scalability with $DRT.

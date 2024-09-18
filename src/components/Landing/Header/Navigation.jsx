@@ -54,7 +54,7 @@ const Navigation = ({handleCloseMenu }) => {
     handleCloseMenu();
   };
   return (
-    <div className="max-sm:max-h-[calc(100vh-254px)] max-lg:max-h-[calc(100vh-273px)] min-h-[calc(100vh-273px)] lg:min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white max-lg:overflow-y-auto">
+    <div className="z-30 relative max-sm:max-h-[calc(100vh-254px)] max-lg:max-h-[calc(100vh-273px)] min-h-[calc(100vh-273px)] lg:min-h-[calc(100vh-199px)] flex flex-col justify-between bg-dark-black text-white max-lg:overflow-y-auto">
       {/* Content in the center */}
       <div className="flex flex-1 justify-center items-center max-w-[958px] mx-auto max-lg:py-8">
         <nav className="text-center space-y-4">
@@ -91,7 +91,6 @@ const Navigation = ({handleCloseMenu }) => {
                 onClick={() => {}}
                 position="end"
                 className="uppercase  font-display font-normal text-dark-black max-sm:w-full"
-                infoIcon={true}
               />
             </div>
     

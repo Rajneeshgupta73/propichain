@@ -73,7 +73,7 @@ const Footer = ({ isMainMenu = false }) => {
   };
   return (
     <footer
-      className={`bg-dark-black text-white px-5 sm:px-10 lg:px-20 ${
+      className={`z-30 relative bg-dark-black text-white px-5 sm:px-10 lg:px-20 ${
         !isMainMenu ? "py-8" : "max-lg:pt-12 lg:py-20 max-lg:pb-4"
       }`}
     >

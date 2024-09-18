@@ -17,7 +17,7 @@ import Button from "../../shared/Button";
 
 const HowItWorks = () => {
   return (
-    <div className="mt-0 max-lg:pb-[500px] max-sm:px-5 z-30" id="howitworks">
+    <div className="mt-0 max-lg:pb-[500px] max-sm:px-5 z-30 relative sm:pt-28 lg:pt-32 2xl:pt-24" id="howitworks">
       <div className="text-center max-w-xl 2xl:max-w-3xl mx-auto">
         <h2 className="uppercase">How It Works</h2>
         <h3 className="pt-8 sm:pt-6 pb-4 lg:py-8 2xl:py-3 font-bold leading-tight tracking-normal font-dmsans text-dark-black">

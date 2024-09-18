@@ -14,7 +14,7 @@ const AccordionItem = ({ title, content }) => {
         className="w-full text-left py-5 px-4 sm:px-6 flex justify-between items-center focus:outline-none"
         onClick={toggleAccordion}
       >
-        <span className="text-base sm:text-2xl 2xl:text-3xl font-semibold sm:font-medium">{title}</span>
+        <span className="text-base sm:text-2xl 2xl:text-3xl font-semibold sm:font-medium pr-4">{title}</span>
         <span className="text-2xl">
           {isOpen ? '-' : '+'}
         </span>

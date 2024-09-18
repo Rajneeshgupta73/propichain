@@ -104,13 +104,15 @@
   /* z-index: -1; */
 }
 .howwItBg {
-  width: 1920px;
-  height: 749px;
+  width: 1974px;
+  height: 850px;
   flex-shrink: 0;
   background: url("../public/img/Ресурс 2_1_4.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+  background-size: contain;
+  top: 272px;
+  right: 0;
+  left: 0;
 }
 .howwToBuyBg {
   width: 100%;
@@ -119,7 +121,6 @@
   background: url("../public/img/Group_5.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
 }
 .bottomLeftBgOne {
   width: 1974px;
@@ -128,25 +129,29 @@
   background: url("../public/img/Ресурс_2_1_6.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+
 }
-.tokenomicsBg{
-  width: 2474px;
-  height: 2406px;
+.tokenomicsBg {
+  width: 2200px;
+  height: 2200px;
   background: url("../public/img/tokenomics_one.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
   opacity: 0.7;
+  transform: rotate(-9deg);
+  top: 5338px;
+  left: -301px;
 }
-.roadmapBg{
-  width: 100%;
-  height: 769px;
+.roadmapBg {
+  width: 2000px;
+  height: 881px;
   flex-shrink: 0;
   background: url("../public/img/roadmap.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+  top: -462px;
+  left: 0;
+  right: 0;
 }
 .width-max70 {
   @apply max-w-[70%] ;
@@ -164,23 +169,65 @@
 
 @media screen and (max-width: 1536px) {
   .howwItBg{
-    background-size: contain;
-    height: 600px;
-    bottom: 2rem;
+    height: 653px;
   }
   .width-max70 {
     @apply max-w-[50%];
   }
-  .tokenomicsBg{
-    width: 2274px;
-    height: 1906px;
-  }
+  .tokenomicsBg {
+    width: 1900px;
+    height: 1850px;
+    top: 4626px;
+    left: -289px;
 }
-@media screen and (max-width: 1024px) {
+  .topRightBg {
+    height: 1472px;
+    right:-272px;
+    top:0
+  }
+  .bottomRightBg{
+    height: 1267px;
+    left: 0;
+    top: 953px;
+  }
+  .roadmapBg {
+
+    height: 688px;
+    top: -407px;
+}
+}
+@media screen and (max-width: 1279px) {
+  .bottomLeftBg{
+    height:600px;
+    background-image: url("../public/img/Ресурс_tab_1.png");
+    width: 1000px;
+    transform: rotate(-2.72deg);
+  }
+  .bottomRightBg {
+    height: 1077px;
+    left: 0;
+    top: 686px;
+}
+.topRightBg {
+  height: 1259px;
+  right: -366px;
+  top: 20px;
+}
+.howwItBg{
+  height: 540px;
+  top:140px
+}
+.tokenomicsBg {
+  top: 3626px;
+}
+.roadmapBg {
+  height: 532px;
+  top: -322px;
+}
+}
+@media screen and (max-width: 1080px) {
 .bottomLeftBg{
-  background-image: url("../public/img/Ресурс_tab_1.png");
-  width: 1000px;
-  transform: rotate(-2.72deg);
+  height:749px
 }
 .topRightBg{
   background-image: url("../public/img/Ресурс_tab_2.png");
@@ -196,33 +243,106 @@
   width: 543px;
   height: 1158px;
   transform: rotate(-169.606deg);
-  top: 1012px;
-  left: -143px;
+  top: 899px;
+  left: -178px;
 }
 .howwItBg {
   height: 450px;
 }
+.tokenomicsBg {
+  top: 4405px;
+  width: 1900px;
+  height: 1380px;
+  transform: rotate(3deg);
+  left: -320px;
 }
+.roadmapBg {
+  height: 525px;
+  top: -149px;
+  width: 1200px;
+}
+}
+@media screen and (max-width: 1040px) {
+  .roadmapBg {
+    height: 489px;
+    top: -165px;
+    width: 1100px;
+}
+}
+@media screen and (max-width: 800px) {
+  .bottomLeftBg{
+    height: 611px;
+    background-image: url(/public/img/mobile_vector_one.png);
+    width: 765px;
+    transform: rotate(-3.72deg);
+    left: -40px;
+    top: 122px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .bottomRightBg {
+    display: none;
+  }
+  .topRightBg {
+    width: 1077px;
+    height: 417px;
+    transform: rotate(-39.397deg);
+    opacity: 0.15;
+    top: 1017px;
+    right: -249px;
+}
+.tokenomicsBg {
+  top: 3580px;
+  width: 1200px;
+  height: 1044px;
+  transform: rotate(0deg);
+  left: -224px;
+}
+.roadmapBg {
+  height: 489px;
+  top: -134px;
+  width: 800px;
+  background-position: center;
+  background-size: cover;
+}
+}
+
 @media screen and (max-width: 640px) {
   .bottomLeftBg{
     width: 400px;
   }
-  .topRightBg{
-    top: 812px;
-        right: -439px;
-  }
+ 
   .bottomRightBg{
     @apply hidden;
   }
   .howwItBg{
     height: 300px;
-    bottom: -44px;
+    top: 242px;
   }
 }
 @media screen and (max-width: 480px) {
   .bottomLeftBg{
     width: 300px;
   }
+  .topRightBg{
+    top: 1127px;
+  }
+  .howwItBg{
+    height: 300px;
+    top:290px;
+  }
+  .tokenomicsBg {
+    top: 3720px;
+    width: 1200px;
+    height: 795px;
+    left: -322px;
+}
+.roadmapBg {
+  height: 300px;
+  top: -56px;
+  width: 1089px;
+}
 }
 
 @keyframes rotate {
