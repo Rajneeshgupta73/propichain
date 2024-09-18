@@ -121,6 +121,10 @@
   background: url("../public/img/Group_5.png");
   background-repeat: no-repeat;
   background-size: contain;
+  bottom:399px;
+  left:0;
+  right:0;
+  z-index: -1;
 }
 .bottomLeftBgOne {
   width: 1974px;
@@ -195,6 +199,13 @@
     height: 688px;
     top: -407px;
 }
+.howwToBuyBg {
+  height: 613px;
+  bottom: 540px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
 }
 @media screen and (max-width: 1279px) {
   .bottomLeftBg{
@@ -223,6 +234,10 @@
 .roadmapBg {
   height: 532px;
   top: -322px;
+}
+.howwToBuyBg {
+  height: 566px;
+  bottom: 781px;
 }
 }
 @media screen and (max-width: 1080px) {
@@ -261,6 +276,10 @@
   top: -149px;
   width: 1200px;
 }
+.howwToBuyBg {
+  height: 450px;
+  bottom: 863px;
+}
 }
 @media screen and (max-width: 1040px) {
   .roadmapBg {
@@ -278,6 +297,10 @@
     left: -40px;
     top: 122px;
   }
+  .howwToBuyBg {
+    height: 423px;
+    bottom: 890px;
+}
 }
 
 @media screen and (max-width:767px) {
@@ -306,6 +329,11 @@
   background-position: center;
   background-size: cover;
 }
+  .howwToBuyBg {
+      height: 300px;
+      bottom: 818px;
+      background-size: contain;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -320,6 +348,12 @@
     height: 300px;
     top: 242px;
   }
+  .howwToBuyBg {
+    height: 440px;
+    bottom: 852px;
+    background-size: contain;
+    width: 680px;
+}
 }
 @media screen and (max-width: 480px) {
   .bottomLeftBg{
@@ -342,6 +376,18 @@
   height: 300px;
   top: -56px;
   width: 1089px;
+}
+.howwToBuyBg {
+  height: 611px;
+  bottom: 838px;
+  width: 502px;
+  background-image: url(/public/img/mobile_last_svg.png);
+}
+}
+
+@media screen and (max-width: 410px) {
+  .howwToBuyBg {  
+    bottom: 1060px;
 }
 }
 
