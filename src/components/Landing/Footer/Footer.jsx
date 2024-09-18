@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faFacebook, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = ({ isMainMenu = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,15 +11,15 @@ const Footer = ({ isMainMenu = false }) => {
       url: "/",
     },
     {
-      name: faLinkedin,
+      name: faFacebook,
       url: "/",
     },
     {
-      name: faLinkedin,
+      name: faYoutube,
       url: "/",
     },
     {
-      name: faLinkedin,
+      name: faInstagram,
       url: "/",
     },
   ];

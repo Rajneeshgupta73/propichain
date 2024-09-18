@@ -6,7 +6,7 @@ const Banner = () => {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 600);
   return (
-    <div className="px-5 sm:px-10 py-8" id="home">
+    <div className="px-5 sm:px-10 py-8 z-30" id="home">
       {/* <img src="/img/Ресурс_right_top.png"/> */}
       <div className="flex items-center justify-between -mb-2 sm:-mb-7 lg:mb-16">
         <p className="max-sm:max-w-36 max-sm:text-sm">Hassle-Free Real Estate</p>
@@ -53,6 +53,7 @@ const Banner = () => {
                 onClick={() => {}}
                 position="end"
                 className="uppercase  font-display font-normal max-sm:w-full"
+                infoIcon={true}
               />
             </div>
             <h3 className="uppercase mb-4 sm:mb-6">

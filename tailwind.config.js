@@ -5,9 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    breakpoints: {
-      "1xl": "1366px",
-    },
+    // screens: {
+    //   'xs': '479px',
+    // },
     extend: {
       colors: {
         'primary': '#2B8872',
@@ -22,6 +22,8 @@ export default {
         'primary-hover': '#4EA28E',
         'light-green': '#03DF84',
         'gray-dark': '#B3B3B3',
+        'gray-bg': '#FAFAFA',
+        // 'gray-bg': 'red',
       },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'], 
@@ -36,6 +38,8 @@ export default {
       },
       screens: {
         'lg': '1279px',
+        'sm': '766px',
+        'xs': '479px',
       },
     },
   },

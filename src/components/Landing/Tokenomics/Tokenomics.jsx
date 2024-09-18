@@ -81,7 +81,7 @@ const featureItems = [
 ];
 const Tokenomics = () => {
   return (
-    <div className="px-5 sm:px-10 lg:px-20 pb-12 sm:pb-24 lg:pb-36" id="tokenomics">
+    <div className="px-5 sm:px-10 lg:px-20 pb-12 sm:pb-24 lg:pb-36 z-30" id="tokenomics">
       <div>
         <h2 className="text-center mb-12 uppercase">Tokenomics</h2>
         <div className="lg:flex items-center gap-20">

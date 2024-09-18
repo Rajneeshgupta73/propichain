@@ -352,6 +352,40 @@ const IconTabTopRight = ({ className, ...props }) => {
   );
 };
 
+const IconMobileTopLeft = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="85" height="199" viewBox="0 0 85 199" fill="none" className={className}
+    {...props}>
+  <path d="M33.5 198.5L1.5 63.5L84 0.5" stroke="#B3B3B3"/>
+</svg>
+  );
+};
+const IconMobileTopRight = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="78" height="206" viewBox="0 0 78 206" fill="none" className={className}
+    {...props}>
+  <path d="M59.5 205.5L77 54L1 0.5" stroke="#B3B3B3"/>
+</svg>
+  );
+};
+
+const IconMobileBottomLeft = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="66" height="348" viewBox="0 0 66 348" fill="none" className={className}
+    {...props}>
+    <path d="M1 347L65.5 315.5V0" stroke="#B3B3B3"/>
+  </svg>
+  );
+};
+
+const IconMobileBottomRight = ({ className, ...props }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="57" height="354" viewBox="0 0 57 354" fill="none" className={className}
+    {...props}>
+  <path d="M56 353.5L1.5 317L34.5 1" stroke="#B3B3B3"/>
+</svg>
+  );
+};
 export {
   IconArrow,
   IconUserArrow,
@@ -372,5 +406,9 @@ export {
   IconTabTopLeft,
   IconTabBottomLeft,
   IconTabBottomRight,
-  IconTabTopRight
+  IconTabTopRight,
+  IconMobileTopLeft,
+  IconMobileTopRight,
+  IconMobileBottomLeft,
+  IconMobileBottomRight
 };

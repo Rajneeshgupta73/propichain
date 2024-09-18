@@ -6,7 +6,7 @@ import { IconArrow } from "../../iocns/Icons";
 
 const RoundCard = () => {
   return (
-    <div className="flex px-4 lg:px-[48px] pt-[72px] pb-8 items-center gap-8 rounded-[32px] 2xl:rounded-[48px] border border-gray shadow1 bg-white max-w-[664px] lg:max-w-[1030px] mx-auto flex-col justify-center relative mt-0 sm:mt-36 2xl:mt-56 max-sm:mx-5">
+    <div className="z-30 flex px-4 lg:px-[48px] pt-[72px] pb-8 items-center gap-8 rounded-[32px] 2xl:rounded-[48px] border border-gray shadow1 bg-white max-w-[664px] lg:max-w-[1030px] mx-auto flex-col justify-center relative mt-0 sm:mt-36 2xl:mt-56 max-sm:mx-5">
       <div className="flex justify-between sm:justify-center items-center px-6 sm:px-8 py-5 gap-4 border-[3px] border-green bg-dark-black text-white rounded-3xl sm:rounded-full -mt-28 max-sm:flex-wrap">
         <div className="flex items-center gap-4 flex-shrink-0">
           <img src="/img/trophy.svg" alt="trophy" className="max-sm:w-6" />

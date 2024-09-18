@@ -103,7 +103,7 @@ const roadmapItem = [
 ];
 const Roadmap = () => {
   return (
-    <div className="relative" id="roadmap">
+    <div className="relative z-30" id="roadmap">
       <div className='roadmapBg absolute -top-[283px] left-0 right-0 opacity-60'></div>
       <div className="px-5 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-28 2xl:py-40">
         <h2 className="uppercase text-center max-lg:mb-12">Roadmap</h2>

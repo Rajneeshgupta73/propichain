@@ -27,7 +27,7 @@ const Header = () => {
   }
   return (
     <>
-    <div className={`flex justify-between items-center px-5 sm:px-10 py-3 lg:py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-white border-light-gray"}`}>
+    <div className={`z-30 relative flex justify-between items-center px-5 sm:px-10 py-3 lg:py-6 border-b  ${isMenuOpen ? "bg-dark-black border-light-black" : "bg-gray-bg border-light-gray"}`}>
       <div>
         <Link to={"/"}><img src={isMenuOpen ? "/img/Black_Logo.svg" : "/img/Logo.svg"} alt="logo" className="max-lg:w-36"/></Link>
       </div>

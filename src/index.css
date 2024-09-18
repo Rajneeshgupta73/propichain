@@ -13,7 +13,8 @@
   --green: #2b8872;
   --primary-hover: #4ea28e;
   --light-green: #03df84;
-  --gray-dark:"#B3B3B3"
+  --gray-dark:"#B3B3B3";
+  --gray-bg:"#FAFAFA"
 }
 
 @layer base {
@@ -81,7 +82,7 @@
   background: url("../public/img/Ресурс_left_bottom.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .topRightBg {
   width: 1133px;
@@ -91,7 +92,7 @@
   background: url("../public/img/Ресурс_right_top.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .bottomRightBg {
   width: 1152px;
@@ -100,7 +101,7 @@
   background: url("../public/img/Ресурс_3.png");
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .howwItBg {
   width: 1920px;
@@ -226,10 +227,10 @@
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 

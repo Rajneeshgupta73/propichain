@@ -9,6 +9,7 @@ const Button = ({
   className,
   iconClassName,
   position = "start",
+  infoIcon=false
 }) => {
   const getButtonClasses = () => {
     switch (variant) {
@@ -21,19 +22,20 @@ const Button = ({
     }
   };
 
-  const buttonClasses = `${getButtonClasses()} rounded-2xl py-3 lg:py-4 px-8 inline-flex items-center justify-center font-bold font-display text-xs sm:text-sm 2xl:text-base`;
+  const buttonClasses = `${getButtonClasses()} rounded-2xl py-3 lg:py-4 px-8 inline-flex items-center justify-center font-bold font-display text-xs sm:text-sm 2xl:text-base z-30`;
   const size = "h-6 w-6";
+  const infoSize = "h-[22px] w-[22px]";
   return (
     <button onClick={onClick} className={`${buttonClasses} ${className}`}>
          {(icon && position === "start") && (
        <span className={`mr-2 ${iconClassName}`}>
-         <img src={icon} alt={alt} className={size} />
+         <img src={icon} alt={alt} className={infoIcon ? infoSize : size} />
        </span>
      )}
     {label && label }
      {(icon && position === "end") && (
        <span className={`ml-2 ${iconClassName}`}>
-         <img src={icon} alt={alt} className={size} />
+         <img src={icon} alt={alt} className={infoIcon ? infoSize : size} />
        </span>
      )}
    </button>

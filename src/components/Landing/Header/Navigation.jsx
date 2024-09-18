@@ -91,6 +91,7 @@ const Navigation = ({handleCloseMenu }) => {
                 onClick={() => {}}
                 position="end"
                 className="uppercase  font-display font-normal text-dark-black max-sm:w-full"
+                infoIcon={true}
               />
             </div>
     

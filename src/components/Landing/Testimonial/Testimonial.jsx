@@ -49,7 +49,7 @@ const Testimonial = () => {
   const isNextDisabled = currentIndex === testimonials.length - 1;
 
   return (
-    <div className="mt-16 sm:mt-36 lg:mt-[450px] 2xl:mt-[575px] px-5 sm:px-10 lg:px-20">
+    <div className="z-30 pt-32 pb-32 mt-16 sm:mt-24 lg:mt-[410px] 2xl:mt-[575px] px-5 sm:px-10 lg:px-20 bg-white -mb-32">
       <div className="text-center max-w-3xl mx-auto">
         <h4 className="pb-4 font-normal font-display text-2xl 2xl:text-3xl uppercase leading-9 max-sm:leading-tight">
           How Derent simplifies the real estate value chain

@@ -51,7 +51,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="px-5 sm:px-10 lg:px-20 mt-20 sm:mt-10 mb-24 lg:mb-40" id="faq">
+    <div className="px-5 sm:px-10 lg:px-20 mt-20 sm:mt-10 mb-24 lg:mb-40 z-30" id="faq">
       <h2 className="uppercase mb-8 lg:mb-12">Frequently Asked Question</h2>
       {accordionData.map((item, index) => (
         <AccordionItem key={index} title={item.title} content={item.content} />
